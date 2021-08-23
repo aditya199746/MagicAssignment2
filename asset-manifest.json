@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MagicAssignment2/static/css/main.a617e044.chunk.css",
+    "main.js": "/MagicAssignment2/static/js/main.c935f6db.chunk.js",
+    "main.js.map": "/MagicAssignment2/static/js/main.c935f6db.chunk.js.map",
+    "runtime-main.js": "/MagicAssignment2/static/js/runtime-main.7758255c.js",
+    "runtime-main.js.map": "/MagicAssignment2/static/js/runtime-main.7758255c.js.map",
+    "static/js/2.ca626205.chunk.js": "/MagicAssignment2/static/js/2.ca626205.chunk.js",
+    "static/js/2.ca626205.chunk.js.map": "/MagicAssignment2/static/js/2.ca626205.chunk.js.map",
+    "static/js/3.e2c40971.chunk.js": "/MagicAssignment2/static/js/3.e2c40971.chunk.js",
+    "static/js/3.e2c40971.chunk.js.map": "/MagicAssignment2/static/js/3.e2c40971.chunk.js.map",
+    "index.html": "/MagicAssignment2/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/MagicAssignment2/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.ca626205.chunk.js.LICENSE.txt": "/MagicAssignment2/static/js/2.ca626205.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7758255c.js",
+    "static/js/2.ca626205.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.c935f6db.chunk.js"
+  ]
+}
