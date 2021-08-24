@@ -1,13 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { connect } from "react-redux";
 
-const DisplayTable = () => {
-  const selector = useSelector((state) => state.users);
-  console.log(selector);
+const DisplayTable = (props) => {
+  //const selector = useSelector((state) => state.users);
+  //console.log(selector);
 
   return (
     <>
-      {selector.map((ele, idx) => {
+      {props.users.map((ele, idx) => {
         return (
           <ul key={idx}>
             <li>{ele.nameText}</li>
@@ -20,4 +20,13 @@ const DisplayTable = () => {
   );
 };
 
-export default DisplayTable;
+const mapStateToProps = (state) => {
+  return {
+    users: state.users,
+    userName: state.userName,
+    userAge: state.userAge,
+    userGender: state.userGender,
+  };
+};
+
+export default connect(mapStateToProps)(DisplayTable);

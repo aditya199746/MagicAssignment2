@@ -9,8 +9,10 @@ let initialState = {
 };
 
 const users = (state = [...initialState.users], actions) => {
+  console.log(actions.payload);
   switch (actions.type) {
     case "ADD_USER":
+      console.log(actions.payload);
       return [...state, { ...state.users, ...actions.payload }];
     default:
       return state;
@@ -20,7 +22,7 @@ const users = (state = [...initialState.users], actions) => {
 let userName = (state = initialState.userName, actions) => {
   switch (actions.type) {
     case "ADD_USERNAME":
-      return [...state], (userName = actions.payload);
+      return actions.payload; //[...state], (userName = actions.payload);
     default:
       return state;
   }
