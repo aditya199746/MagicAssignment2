@@ -10,17 +10,13 @@ const MainDisplay = (props) => {
     let nameVal = e.target.value;
 
     if (e.target.name === "userName") {
-      //dispatch(USER_NAME(nameVal));
-      userNameProps(nameVal);
-      //dispatch(`${e.target.name}(${nameVal})`);
+      let valid = nameVal.match(/[A-Za-z]/gi, "");
+      console.log(valid, "regex");
+      userNameProps(valid);
     } else if (e.target.name === "userAge") {
-      //dispatch(USER_AGE(nameVal));
       userAgeProps(nameVal);
-      //dispatch(`${e.target.name}(${nameVal})`);
     } else if (e.target.name === "userGender") {
-      //dispatch(USER_GENDER(nameVal));
       userGenderProps(nameVal);
-      //dispatch(`${e.target.name}(${nameVal})`);
     }
   };
 
